@@ -21,14 +21,13 @@
 @keyframes slidein {
   to {
     filter: blur(0);
-    transform: scale(.8) translateY(0%);
-    transform-origin: 50% 30%;
+    transform: scale(1) translateY(0%);
   }
 }
 svg {
     filter: blur(5px);
-    transform: scale(1.2) translateY(-30%);
-    transform-origin: 50% -30%;
+    transform: scale(1.6) translateY(-50%);
+    transform-origin: 50% 0%;
     animation-duration: 1s;
     animation-name: slidein;
     animation-timing-function: cubic-bezier(.7,0,.3,1);

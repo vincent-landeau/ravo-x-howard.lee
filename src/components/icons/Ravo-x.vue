@@ -8,3 +8,19 @@
 <path d="M0.550781 16.7615V0H7.10757C10.3502 0 12.5438 2.05049 12.5438 4.88779C12.5438 7.53435 10.7794 9.34641 8.03745 9.70405L13.6405 16.7615H9.70645L4.3418 9.75174H3.79341V16.7615H0.550781ZM6.82146 2.64656H3.79341V7.22439H6.82146C8.41893 7.22439 9.32496 6.36605 9.32496 4.93548C9.32496 3.64796 8.41893 2.64656 6.82146 2.64656Z" fill="var(--color-text)"/>
 </svg>
 </template>
+
+<style scoped>
+@keyframes slidein {
+  to {
+    transform: scale(3);
+  }
+}
+svg {
+    transform: scale(1);
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-timing-function: cubic-bezier(.7,0,.3,1);
+    animation-fill-mode: forwards;
+
+}
+</style>
