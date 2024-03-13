@@ -53,7 +53,7 @@ import Wings from './Wings.vue'
 @keyframes blurin {
   to {
     filter: blur(0);
-    transform: scale(1) translateY(0%);
+    transform: scale(.9) translateY(0%);
   }
 }
 .main-title {
