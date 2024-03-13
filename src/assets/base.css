@@ -56,7 +56,6 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
 }
 
 body {
@@ -82,4 +81,10 @@ button {
 
 li {
   list-style: none;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }

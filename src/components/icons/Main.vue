@@ -1,5 +1,4 @@
 <template>
-    <div class="main-abstract">
         <svg width="1366" height="911" viewBox="0 0 1366 911" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M568.161 -133L-161.069 596.22V810.7" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
             <path d="M167.35 267.81C129.82 305.34 69.4902 379.07 69.4902 421.97V810.71" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
@@ -33,30 +32,4 @@
             <path d="M1026.6 186.22C987.831 224.99 935.061 279.87 935.061 338.85V682.01C935.061 719.54 895.231 767.8 863.061 810.7" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
             <path d="M814.811 848.24C814.811 848.24 686.121 979.61 664.681 1001.06C643.231 1022.51 628.621 1050.21 521.991 1050.21H-598.049" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
         </svg>
-    </div>
-
 </template>
-
-<style scoped>
-@keyframes slidein {
-  to {
-    transform: scale(1) translateY(0%);
-  }
-}
-
-.main-abstract {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(.85);
-}
-
-svg {
-    transform: scale(.5) translateY(20%);
-    transform-origin: bottom center;
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-timing-function: cubic-bezier(.7,0,.3,1);
-    animation-fill-mode: forwards;
-}
-</style>

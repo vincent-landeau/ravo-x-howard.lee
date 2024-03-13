@@ -4,19 +4,19 @@ import {WingAbstractIcon} from "./icons/AbstractIcons.js"
 
 <template>
     <div class="wings-container">
-        <div class="wings">
-          <WingAbstractIcon/>
-          <WingAbstractIcon/>
+        <div class="wings animated">
+          <WingAbstractIcon class="wing animated"/>
+          <WingAbstractIcon class="wing animated"/>
         </div>
-        <div class="wings reversed">
-          <WingAbstractIcon class="reversed"/>
-          <WingAbstractIcon class="reversed"/>
+        <div class="wings reversed animated">
+          <WingAbstractIcon class="wing reversed animated"/>
+          <WingAbstractIcon class="wing reversed animated"/>
         </div>
       </div>
 </template>
 
 <style scoped>
-@keyframes twistin {
+@keyframes twist {
  to {
     transform: translateX(0%) rotate(0deg);
  }   
@@ -29,13 +29,30 @@ import {WingAbstractIcon} from "./icons/AbstractIcons.js"
 .wings {
     transform: translateX(100%) rotate(-45deg);
     transform-origin: top right;
-    animation-duration: 1s;
-    animation-name: twistin;
-    animation-timing-function: cubic-bezier(.7,0,.3,1);
-    animation-fill-mode: forwards;
+    animation-name: twist;
 }
 .wings.reversed {
     transform: translateX(-100%) rotate(45deg);
     transform-origin: top left;
+}
+
+@keyframes twistin {
+ to {
+    transform: scale(1) rotate(0deg);
+ }   
+}
+.wing {
+    transform: scale(.5) rotate(-90deg);
+    animation-name: twistin;
+}
+
+@keyframes reversedtwistin {
+ to {
+    transform: scale(-1, 1) rotate(0deg);
+ }   
+}
+.wing.reversed  {
+    animation-name: reversedtwistin;
+    transform: scale(-.5, .5)rotate(-90deg);
 }
 </style>

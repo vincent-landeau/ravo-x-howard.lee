@@ -3,7 +3,7 @@ import CharacterImage from './../assets/character.png'
 </script>
 
 <template>
-    <div class="character">
+    <div class="character animated">
       <img :src=CharacterImage>
     </div>
 </template>
@@ -18,13 +18,10 @@ import CharacterImage from './../assets/character.png'
 .character {
     position: absolute;
     top: 2%;
-    left: 55%;
+    left: 54%;
     transform: translateX(-50%) scale(.8);
     transform-origin: center bottom;
-    animation-duration: 1s;
     animation-name: sizein;
-    animation-timing-function: cubic-bezier(.7,0,.3,1);
-    animation-fill-mode: forwards;
 }
 
 .character > img {

@@ -23,19 +23,3 @@
     </svg>
 
 </template>
-
-<style scoped>
-@keyframes slidein {
-  to {
-    transform: scaleY(1);
-  }
-}
-svg {
-    transform: scaleY(0.35);
-    transform-origin: 0 0;
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-timing-function: cubic-bezier(.7,0,.3,1);
-    animation-fill-mode: forwards;
-}
-</style>

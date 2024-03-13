@@ -1,32 +1,10 @@
 <template>
-    <div class="striped-block">
-        <svg width="129" height="45" viewBox="0 0 129 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M127.813 26.2301L109.16 44.8392H123.15L127.813 39.7177V26.2301Z" fill="black"/>
-            <path d="M127.813 0L121.9 0L76.936 44.8392H90.3435L128.25 6.99608L127.813 0Z" fill="black"/>
-            <path d="M101.298 0L89.4676 0L44.9619 44.8392H57.8142L101.298 0Z" fill="black"/>
-            <path d="M68.859 0L56.315 0L11.9888 44.8392H25.0627L68.859 0Z" fill="black"/>
-            <path d="M35.7194 0L23.4794 0L0 23.7306L0 36.6588L35.7194 0Z" fill="black"/>
-            <path d="M5.75268 0L0 0L0 5.99544L5.75268 0Z" fill="black"/>
-        </svg>
-    </div>
+    <svg width="129" height="45" viewBox="0 0 129 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.813 26.2301L109.16 44.8392H123.15L127.813 39.7177V26.2301Z" fill="black"/>
+<path d="M127.813 0L121.9 0L76.936 44.8392H90.3435L128.25 6.99608L127.813 0Z" fill="black"/>
+<path d="M101.298 0L89.4676 0L44.9619 44.8392H57.8142L101.298 0Z" fill="black"/>
+<path d="M68.859 0L56.315 0L11.9888 44.8392H25.0627L68.859 0Z" fill="black"/>
+<path d="M35.7194 0L23.4794 0L0 23.7306L0 36.6588L35.7194 0Z" fill="black"/>
+<path d="M5.75268 0L0 0L0 5.99544L5.75268 0Z" fill="black"/>
+</svg>
 </template>
-
-<style scoped>
-@keyframes fadein {
- to {
-    opacity: 1;
-    bottom: 47px;
- }   
-}
-
-.striped-block {
-    position: absolute;
-    bottom: 0px;
-    left: 92px;
-    opacity: 0;
-    animation-duration: 1s;
-    animation-name: fadein;
-    animation-timing-function: cubic-bezier(.7,0,.3,1);
-    animation-fill-mode: forwards;
-}
-</style>
